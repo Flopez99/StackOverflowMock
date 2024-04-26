@@ -1,0 +1,753 @@
+/* Add CSS */
+.navigation a {
+    height: 100%;
+    display: table;
+    float: left;
+    text-decoration: none;
+    width: 50%;
+    padding: 0px 20px;
+  }
+
+  .navigation a li {
+    display: table-cell;
+    vertical-align: middle;
+    height: 100%;
+    color: black;
+    font-family: "Montserrat";
+    font-size: 20px;
+  }
+  
+  /* Add CSS stylesheet */
+  * {
+    margin: 0;
+    padding: 0;
+    font-family: Montserrat;
+  
+  }
+  
+  body {
+    -ms-overflow-style: none; /* for Internet Explorer, Edge */
+    scrollbar-width: none; /* for Firefox */
+    overflow-y: scroll; 
+  
+  }
+  
+  body::-webkit-scrollbar {
+    display: none; /* for Chrome, Safari, and Opera */
+  }
+  
+  .header {
+    width: 100%;
+    height: 80px;
+    display: block;
+    background-color: #D3D3D3;
+    border: 1px solid black;
+  
+  }
+  
+  .inner_header {
+    width: 1250px;
+    height: 100%;
+    display: block;
+    margin: 0 auto;
+  }
+  
+  .logo_container {
+    position: absolute;
+    left: 50%;
+    top: 5%;
+    transform: translate(-50%, -50%);
+    padding: 10px;
+  }
+  
+  .searchBar input[type="text"] {
+    display: inline;
+    float:right;
+    position: absolute;
+    top: 3%;
+    left: 75%;
+    background-color: white;
+    color: grey;
+    float: right;
+    height: 35px;
+    width: 200px;
+    font-size: 16px;
+  }
+  
+  .logo_container h1 {
+    color: black;
+    height: 100%;
+    display: table-cell;
+    vertical-align: middle;
+    font-family: "Montserrat";
+    font-size: 32px;
+  }
+  
+  .navigation {
+    display: inline;
+    float: left;
+    height: 100%;
+    margin-left: 0;
+  }
+  
+  .navigation a {
+    height: 100%;
+    display: table;
+    float: left;
+    text-decoration: none;
+    text-align: center;
+    width: 70px;
+    padding: 0px 20px;
+  }
+  #logOutUser{
+    padding-left: 400px;
+  }
+  .navigation li {
+    display: inline;
+  }
+  
+  .navigation a li {
+    display: table-cell;
+    vertical-align: middle;
+    height: 100%;
+    color: black;
+    font-family: "Montserrat";
+    font-size: 20px;
+  }
+  
+  .inactive:hover {
+    background-color: #a9a9a9;
+  }
+  
+  .table-header {
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 20px;
+  }
+
+  /* .questionRow td:first-child {
+    background-color: RED;
+    width: 2px;
+    display:inline-block
+
+  } */
+
+  /* .viewsColumn{
+    display: inline-block;
+  } */
+
+  .table-header th:nth-child(1),
+  .table-header th:nth-child(3) {
+    width: 25%;
+  }
+  .table-header th:nth-child(2) {
+    width: 1000px;
+  }
+  
+  
+  .table-header th {
+    text-align: center;
+    padding: 5px;
+    padding-bottom: 25px;
+  }
+  
+  .table-header .ask-button-header {
+    text-decoration: none;
+    background-color: #165A92;
+    color: white;
+    font-size: medium;
+    font-weight: bolder;
+    border-radius: 20px;
+    border: 1px solid black;
+    padding: 0.8em;
+    cursor: pointer;
+    margin: 4px 2px;
+  }
+  .votes {
+    width:50px;
+    padding-right: 10px;
+    float:left;
+  } 
+
+  .votesQ{
+    width:50px;
+    padding-left: 170px;
+    padding-top: 30px;
+    float:left;
+  } 
+
+  .votesAns {
+    width:50px;
+    padding-left: 75px;
+    float:left;
+  }
+
+  .table-header .question-row td {
+    padding-bottom: 10px;
+  }
+  
+  .table-header .ask-button-header:active {
+    position: relative;
+    top: 1px;
+  }
+  
+  .table-header .question-row #asked-at {
+    text-align: right;
+  }
+  .viewsAndAns{
+    float: left;
+  }
+  .views{
+    padding-left: 160px;
+  }
+  
+  #views{
+    text-align: center;
+  }
+  #asked-at{
+    text-align: right;
+    margin-left: 120px;
+  }
+  
+  #asked-at2{
+    text-align: right;
+    padding-right: 120px;
+  }
+  
+  #wrapper-info{
+    margin-right: 130px;
+    text-align: right;
+  
+  }
+  .question-title{
+    font-family: "Montserrat";
+  }
+  .question-title h3:hover{
+  
+    color: #165A92;
+  
+  }
+  
+  
+  .top-text{
+    padding-top: 20px;
+  }
+  
+  .question-form{
+    margin-top: 5px;
+  }
+  
+  .question-form form{
+    margin-left: 3%;
+    margin-top: 80px;
+    position: absolute
+  }
+  
+  .question-form form p {
+    font-style: italic;
+    font-size: 15px
+  }
+  
+  .question-form .user-text{
+    font-size: 15px;
+    resize: none;
+    overflow-y: auto;
+  
+  }
+  
+  .wrapperAnsDiv{
+    /* border-bottom: 1px dashed black; */
+    padding-top: 15px;
+    padding-bottom: 70px;
+  
+  }
+  .ansChild1{
+    float: left;
+    width: 70%;
+    padding-top: 10px;
+    /* border: 1px solid red; */
+    margin-left: 20px;
+  
+  }
+  
+  .ansChild2{
+    float: right;
+    text-align: right;
+    margin-right: 130px;
+  }
+  
+  
+  div #error {
+    float: center;
+    /* padding-right:10%; */
+    margin-bottom: -100px;
+    color: red;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+  }
+  
+  div #error2 {
+    float: center;
+    /* padding-right:10%; */
+    margin-top: 20px;
+    margin-bottom: -60px;
+    color: red;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+  }
+  .nextPrevComment {
+   
+    padding-left:0px;
+
+  }
+
+  .guestWarning{
+    padding-left: 450px;
+    padding-top: 200px
+  }
+
+  #answerQuestionButton{
+    text-decoration: none;
+    background-color: #165A92;
+    color: white;
+    font-size: medium;
+    font-weight: bolder;
+    border-radius: 20px;
+    padding: 0.8em;
+    cursor: pointer;
+    margin-top: 10px;
+    margin-bottom: 20px;
+  }
+  
+  #answerQuestionDiv{
+    text-align: center;
+    /* margin-top: 30%; */
+    width: 100%
+  }
+  
+  #questionAnswers{
+    overflow: scroll;
+  }
+  
+  .answer-form-title{
+    font-family:"Montserrat";
+    padding-bottom: 10px;
+    font-size: 40px;
+  }
+  .sub-text{
+    font-style: italic;
+    padding-bottom: 2px;
+  }
+  .answer-form-text{
+    resize: none;
+    padding-bottom: 15px;
+    font-size: 16px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  }
+  #answer-question-form2{
+    margin-left: 5%;
+    margin-top: 4%;
+  }
+  
+  .submit-button {
+    text-decoration: none;
+    background-color: #165A92;
+    color: white;
+    font-size: medium;
+    font-weight: bolder;
+    border-radius: 20px;
+    padding: 0.8em;
+    margin-right: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+  }
+  
+  
+  .active {
+    padding-left: 15px;
+    padding-right:15px;
+    margin-left: 0px;
+    margin-right: 0px;
+    background-color:#0281E8;
+  }
+  
+  .inactive {
+    padding-left: 15px;
+    padding-right:15px;
+    margin-left: 0px;
+    margin-right: 0px;
+    background-color:#D3D3D3;
+  }
+  
+  .answer-text {
+    margin-left: 40%;
+    margin-top: 10%;
+  }
+  
+  .tag-button{
+    background: none;
+    font-size: 23px;
+    border: none;
+    color: #0281E8;
+    text-decoration: underline;
+  }
+
+  .Main-Container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    text-align: center;
+  
+    padding: 5px; /* this */
+  
+    margin-left: 25%;
+    margin-right: 25%;
+    margin-top: 50px;
+  
+  }
+  
+  .Child-Elements{
+    width: calc(33.3% - 62px);
+    padding-bottom: 10px;
+  
+    margin: 5px;  /* and that, will result in a 10px gap */
+  
+  }
+  
+  .display-tag-div{
+    border: 1px black;
+    padding: 20px;
+    border-style: solid;
+  
+  }
+  
+  .tagList{
+    display: inline;
+    /* background-color: red; */
+  }
+  
+
+  .myButtonS {
+    box-shadow:inset 0px -3px 7px 0px #bcc0c2;
+    background:linear-gradient(to bottom, #c1c5c7 5%, #c5c7c9 100%);
+    background-color:#c1c5c7;
+    border-radius:3px;
+    border:1px solid #bebfbd;
+    display:inline-block;
+    cursor:pointer;
+    color:#0a0a0a;
+    font-family:Arial;
+    font-size:15px;
+    padding:9px 23px;
+    text-decoration:none;
+    text-shadow:0px 1px 0px #b0b0b0;
+  }
+  .myButtonS:hover {
+    background:linear-gradient(to bottom, #c5c7c9 5%, #c1c5c7 100%);
+    background-color:#c5c7c9;
+  }
+  .myButtonS:active {
+    position:relative;
+    top:1px;
+  }
+
+  .sideBar{
+    float: left;
+    width: 10%;
+    padding-top: 40px;
+    padding-left: 0px;
+  }
+  .userUl{
+    list-style-type: none;
+  }
+  .userLi{
+    
+  }
+
+.nextPrevDiv{
+  padding-left: 40%;
+  padding-top: 20px;
+}
+  .nextPrev {
+    box-shadow:inset 0px -3px 7px 0px #29bbff;
+    background:linear-gradient(to bottom, #2dabf9 5%, #0688fa 100%);
+    background-color:#2dabf9;
+    border-radius:3px;
+    border:1px solid #0b0e07;
+    display:inline-block;
+    cursor:pointer;
+    color:#ffffff;
+    font-family:Arial;
+    font-size:15px;
+    margin:5px;
+    padding:9px 23px;
+    text-decoration:none;
+    text-shadow:0px 1px 0px #263666;
+  }
+  .nextPrev:hover {
+    background:linear-gradient(to bottom, #0688fa 5%, #2dabf9 100%);
+    background-color:#0688fa;
+  }
+  .nextPrev:active {
+    position:relative;
+    top:1px;
+  }
+
+  .nextPrevDis {
+    box-shadow:inset 0px -3px 7px 0px gray;
+    background:linear-gradient(to bottom, gray 5%, gray 100%);
+    background-color:gray;
+    border-radius:3px;
+    border:1px solid gray;
+    display:inline-block;
+    cursor:pointer;
+    color:white;
+    cursor: not-allowed;
+    font-family:Arial;
+    font-size:15px;
+    margin:5px;
+    padding:9px 23px;
+    text-decoration:none;
+    text-shadow:0px 1px 0px gray;
+  }
+
+
+
+
+  .middleTitle{
+    padding-left: 47%;
+  }
+
+  #top-table{
+    table-layout: fixed;
+
+  }
+  #top-table td{
+    font-family: "Montserrat";
+  
+    border-bottom: 1px dashed black ;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  
+  }
+
+  .questionComments{
+    padding-left: 25%;
+    padding-bottom: 10px;
+    padding-top: 20px;
+
+  }
+  .questionComments p{
+    padding-bottom: 10px;
+  }
+  .usernameC{
+    color:blue
+  }
+
+  .ansCChild{
+    float:left;
+    padding-right:15px;
+  }
+  .ansCerror{
+    padding-top: 10px
+  }
+  .errorC{
+    color:red
+  }
+
+  .qDivider{
+    border-top: 1px dashed black;
+  }
+  #top-table-a td{
+    font-family: "Montserrat";
+  
+    padding-top: 10px;
+    padding-bottom: 10px;
+  
+  }
+
+  #top-table-tag td{
+    font-family: "Montserrat";
+  
+    border-bottom: 1px dashed black ;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  
+  }
+  .newRowQ{
+    font-family: "Montserrat";
+  
+    border-bottom: 1px dashed black ;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  
+  .errorItem{
+    display:block;
+  }
+
+
+  .titleNameClick{
+    padding-bottom: 5px;
+    font-size: 20px;
+    color: #1482db;
+  }
+  .tagListItem{
+    display: inline;
+    text-align: center;
+    border: 2px solid black;
+    padding-left: 10px ;
+    padding-right: 10px ; 
+    margin-right: 10px;
+    background-color: #a9a9a9;
+    border-radius: 10px;
+    color:white;
+    font-weight: bold;
+  
+  }
+  /* .tagListItem:nth-child(5n) {
+    flex-basis: 25%;
+  } */
+  .ulWrapperDiv{
+    width: 90%;
+  }
+  .ulTags{
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+  
+    margin-top: 10px ;
+  }
+  
+  #hiddenAnchor{
+    display: none;
+  }
+  
+  .usernameQ{
+    color:#165A92
+  }
+  
+  .askedOnQ{
+    color:seagreen
+  }
+  .askedAtQ{
+    color: teal
+  }
+  
+  #askedByP{
+    color:#165A92
+  }
+  
+  #askedOnP{
+    color:seagreen
+  }
+  #askedAtP{
+    color: teal
+  }
+
+  .hideTags{
+    display:none;
+  }
+
+/* CSS FOR WELCOME PAGE STARTS HERE !!*/
+  .welcomeTitle{
+    color:#0281E8;
+    font-size: 40px;
+    padding-top: 50px;
+  }
+  
+  .welcomeDiv{
+    text-align: center;
+
+  }
+
+  .loginDiv h1 {
+    text-transform: uppercase;
+    font-weight: 700;
+  }
+
+  .errorDiv{
+    text-align: left;
+    vertical-align: middle;
+    display: inline-block;
+    margin-left: 720px;
+    margin-top: 55px;
+    color: red;
+    list-style:none;
+  }
+  .errorDivLogin{
+    text-align: left;
+    vertical-align: middle;
+    display: inline-block;
+    margin-top: 55px;
+    color: red;
+    list-style:none;
+  }
+  .errorDivLogin li{
+    list-style:none;
+    padding-top: 3px;
+    font-weight: bold;
+    font-size: 20px;
+  }
+  .errorDiv li{
+    list-style:none;
+    padding-top: 3px;
+    font-weight: bold;
+    font-size: 20px;
+  }
+
+  .loginDiv input {
+    border: 0;
+    background: none;
+    display: block;
+    margin: 20px auto;
+    border: 3px solid #29bbff;
+    padding: 14px 10px;
+    width: 220px;
+    outline: none;
+    color: black;
+    border-radius: 24px;
+    transition: .25px;
+    
+  }
+  .loginDiv{
+    display: inline-block;
+    vertical-align: middle;
+
+    width: 300px;
+    padding: 30px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    border: 2px solid black;
+
+  }
+
+
+.authButton {
+	box-shadow:inset 0px -3px 7px 0px #29bbff;
+	background:linear-gradient(to bottom, #2dabf9 5%, #0688fa 100%);
+	background-color:#2dabf9;
+	border-radius:3px;
+	border:1px solid #0b0e07;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+  margin: 5px;
+	font-size:15px;
+	padding:9px 23px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #263666;
+}
+.authButton:hover {
+	background:linear-gradient(to bottom, #0688fa 5%, #2dabf9 100%);
+	background-color:#0688fa;
+}
+
+  
