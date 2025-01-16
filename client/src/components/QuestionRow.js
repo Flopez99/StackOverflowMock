@@ -124,7 +124,7 @@ export default class QuestionRow extends React.Component{
              </td>
   
              <td className="question-title">
-                     <a onClick = {() => this.view_question(question)} className = "titleNameClick"><h3>{question.qid + " " + question.title}</h3></a>
+                     <a onClick = {() => this.view_question(question)} className = "titleNameClick"><h3>{question.title}</h3></a>
                      <p>{question.summary}</p>
                      <div className = "ulWrapperDiv"> 
                       <ul id = {question.qid}  className = "ulTags">    

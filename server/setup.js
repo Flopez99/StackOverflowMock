@@ -1,4 +1,4 @@
-const mysql = require('mysql')
+const mysql = require('mysql2')
 
 
 let userArgs = process.argv.slice(2);
@@ -49,7 +49,7 @@ connection.connect((err) =>{
                                     connection.query("CREATE TABLE `fake_so`.`uq` (`userId` INT NOT NULL,`qstnId` INT NOT NULL);", (err, result) => {
                                         if(err) throw err
                                     
-                                        connection.query("CREATE TABLE `fake_so`.`users` (`userId` INT NOT NULL AUTO_INCREMENT,`username` VARCHAR(45) NULL DEFAULT 'Username',`email` VARCHAR(45) NOT NULL,`password` VARCHAR(2000) NOT NULL,`reputation` INT NOT NULL DEFAULT '0',`signup_date_time` DATETIME NULL DEFAULT CURRENT_TIMESTAMP,PRIMARY KEY (`userId`));", (err, result) => {
+                                        connection.query("CREATE TABLE `fake_so`.`users` (`userId` INT NOT NULL AUTO_INCREMENT,`username` VARCHAR(45) NULL DEFAULT 'Username',`email` VARCHAR(45) NOT NULL,`password` VARCHAR(2000) NOT NULL,`reputation` INT NOT NULL DEFAULT '120',`signup_date_time` DATETIME NULL DEFAULT CURRENT_TIMESTAMP,PRIMARY KEY (`userId`));", (err, result) => {
                                             if(err) throw err
                                         
                                             connection.query("CREATE TABLE `fake_so`.`ut` (`userId` INT NOT NULL,`tagId` INT NOT NULL);", (err, result) => {

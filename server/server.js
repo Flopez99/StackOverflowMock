@@ -3,7 +3,7 @@ const Answer = require('./db/Answer.js')
 const Tag = require('./db/Tag.js')
 
 const express = require('express');
-const mysql = require('mysql')
+const mysql = require('mysql');
 const cors = require('cors');
 const bcrypt = require('bcrypt');
 const saltRounds = 10;
@@ -38,7 +38,8 @@ const db = mysql.createConnection({
     user    : user,
     password: pass,
     database: 'fake_so'
-})
+});
+
    
 sessionStore = new MySQLStore({},db)
  
@@ -52,8 +53,14 @@ app.use(session({
     // },
     store: sessionStore
 }))
-db.connect()
- 
+db.connect((err) => {
+    if (err) {
+      console.error("Database connection failed:", err);
+      return;
+    }
+    console.log("Database connected.");
+  });
+   
 app.get('/loggedIn', (req, res) => {
     if(req.session.user){
         res.send({loggedIn: true, user: req.session.user})

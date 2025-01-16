@@ -87,6 +87,7 @@
     display: inline;
     float: left;
     height: 100%;
+    width: 100%;
     margin-left: 0;
   }
   
@@ -99,9 +100,7 @@
     width: 70px;
     padding: 0px 20px;
   }
-  #logOutUser{
-    padding-left: 400px;
-  }
+
   .navigation li {
     display: inline;
   }
